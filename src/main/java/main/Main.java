@@ -19,6 +19,17 @@ public final class Main extends JavaPlugin {
         setExcutors(new DMHandler(), new ColorHandler());
     }
 
+    private void setExcutors(TabExecutor... excutors) {
+        getDescription().getCommands().keySet().forEach(s -> {
+                    for (TabExecutor executor : excutors) {
+                        Objects.requireNonNull(getCommand(s)).setExecutor(executor);
+                        Objects.requireNonNull(getCommand(s)).setTabCompleter(executor);
+                    }
+                }
+        );
+        
+    }
+
     @Override
     public void onDisable() {
         Bukkit.getConsoleSender().sendMessage(INDEX + "§c플러그인이 비활성화되었습니다.");
