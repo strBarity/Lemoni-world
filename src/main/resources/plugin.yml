@@ -2,3 +2,10 @@ name: Lemoni
 version: 1.0.0
 main: main.Main
 api-version: 1.19
+commands:
+  귓속말:
+    description: 귓속말 명령어
+    aliases: [ 귓, 귓말, w, msg, tell, dm ]
+  색깔:
+    description: 닉네임 색깔 명령어
+    aliases: [ color ]

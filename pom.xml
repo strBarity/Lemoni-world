@@ -23,8 +23,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>18</source>
+                    <target>18</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -39,6 +39,7 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
+                            <outputFile>E:\베리티\bukkit\Dev\plugins\Lemon.jar</outputFile>
                         </configuration>
                     </execution>
                 </executions>
