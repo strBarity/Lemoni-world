@@ -39,7 +39,6 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
-                            <outputFile>E:\베리티\bukkit\Dev\plugins\Lemon.jar</outputFile>
                         </configuration>
                     </execution>
                 </executions>
